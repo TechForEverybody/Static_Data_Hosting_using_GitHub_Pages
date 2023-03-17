@@ -10,12 +10,14 @@ Data = {
 		"Screenshot (648).png",
 		"Screenshot (649).png",
 	],
-	compressed: ["lorem.zip", "lorem2.zip", "lorem3.zip"],
-	csv: ["lorem.csv", "lorem2.csv", "lorem3.csv"],
-	json: ["lorem.json", "lorem2.json", "lorem3.json"],
-	pdf: ["lorem.pdf", "lorem2.pdf", "lorem3.pdf"],
-	audio: ["audio1.mp3", "audio2.mp3", "audio3.mp3"],
-	video: ["video1.mp4", "video2.mp4", "video3.mp4"],
+	compressed: [],
+	csv: [],
+	json: [
+        "countries.json"
+    ],
+	pdf: [],
+	audio: [],
+	video: [],
 };
 
 let Images_Data = "";
@@ -33,15 +35,16 @@ if (Data.images.length == 0) {
             <h1>${element}</h1>
         <div class="options">
             <button class="download"><a href="./Data/Images/${element}" download>Download</a></button>
-            <button class="view" disabled style="background: rgba(0, 255, 255, 0.342);box-shadow: none;"
-                title="This option is disabled">Get Link</button>
+            <button class="view" style="color:black; background: rgba(0, 255, 0, 0.342);box-shadow: none;"
+                title="This option is disabled">    <a href="https://techforeverybody.github.io/Static_Data_Hosting_using_GitHub_Pages/Data/Images/${element}" target="_blank">Get Link</a></button>
         </div>
     </div>
     `;
 	});
 }
-
 document.getElementById("images").innerHTML = Images_Data;
+
+
 
 let JSON_Data = "";
 if (Data.json.length == 0) {
@@ -58,8 +61,8 @@ if (Data.json.length == 0) {
             <h1>${element}</h1>
         <div class="options">
             <button class="download"><a href="./Data/JSON/${element}" download>Download</a></button>
-            <button class="view" disabled style="background: rgba(0, 255, 255, 0.342);box-shadow: none;"
-                title="This option is disabled">Get Link</button>
+            <button class="view" style="color:black; background: rgba(0, 255, 0, 0.342);box-shadow: none;"
+                title="This option is disabled">    <a href="https://techforeverybody.github.io/Static_Data_Hosting_using_GitHub_Pages/Data/JSON/${element}" target="_blank">Get Link</a></button>
         </div>
     </div>
     `;
@@ -82,8 +85,8 @@ if (Data.csv.length == 0) {
             <h1>${element}</h1>
         <div class="options">
             <button class="download"><a href="./Data/CSV/${element}" download>Download</a></button>
-            <button class="view" disabled style="background: rgba(0, 255, 255, 0.342);box-shadow: none;"
-                title="This option is disabled">Get Link</button>
+            <button class="view" style="color:black; background: rgba(0, 255, 0, 0.342);box-shadow: none;"
+                title="This option is disabled">    <a href="https://techforeverybody.github.io/Static_Data_Hosting_using_GitHub_Pages/Data/CSV/${element}" target="_blank">Get Link</a></button>
         </div>
     </div>
     `;
@@ -106,8 +109,8 @@ if (Data.compressed.length == 0) {
             <h1>${element}</h1>
         <div class="options">
             <button class="download"><a href="./Data/ZIP/${element}" download>Download</a></button>
-            <button class="view" disabled style="background: rgba(0, 255, 255, 0.342);box-shadow: none;"
-                title="This option is disabled">Get Link</button>
+            <button class="view" style="color:black; background: rgba(0, 255, 0, 0.342);box-shadow: none;"
+                title="This option is disabled">    <a href="https://techforeverybody.github.io/Static_Data_Hosting_using_GitHub_Pages/Data/ZIP/${element}" target="_blank">Get Link</a></button>
         </div>
     </div>
     `;
@@ -130,8 +133,8 @@ if (Data.compressed.length == 0) {
             <h1>${element}</h1>
         <div class="options">
             <button class="download"><a href="./Data/PDF/${element}" download>Download</a></button>
-            <button class="view" disabled style="background: rgba(0, 255, 255, 0.342);box-shadow: none;"
-                title="This option is disabled">Get Link</button>
+            <button class="view" style="color:black; background: rgba(0, 255, 0, 0.342);box-shadow: none;"
+                title="This option is disabled">    <a href="https://techforeverybody.github.io/Static_Data_Hosting_using_GitHub_Pages/Data/PDF/${element}" target="_blank">Get Link</a></button>
         </div>
     </div>
     `;
@@ -154,8 +157,8 @@ if (Data.audio.length == 0) {
             <h1>${element}</h1>
         <div class="options">
             <button class="download"><a href="./Data/Audio/${element}" download>Download</a></button>
-            <button class="view" disabled style="background: rgba(0, 255, 255, 0.342);box-shadow: none;"
-                title="This option is disabled">Get Link</button>
+            <button class="view" style="color:black; background: rgba(0, 255, 0, 0.342);box-shadow: none;"
+                title="This option is disabled">    <a href="https://techforeverybody.github.io/Static_Data_Hosting_using_GitHub_Pages/Data/Audio/${element}" target="_blank">Get Link</a></button>
         </div>
     </div>
     `;
@@ -178,8 +181,8 @@ if (Data.video.length == 0) {
             <h1>${element}</h1>
         <div class="options">
             <button class="download"><a href="./Data/Video/${element}" download>Download</a></button>
-            <button class="view" disabled style="background: rgba(0, 255, 255, 0.342);box-shadow: none;"
-                title="This option is disabled">Get Link</button>
+            <button class="view" style="color:black; background: rgba(0, 255, 0, 0.342);box-shadow: none;"
+                title="This option is disabled">    <a href="https://techforeverybody.github.io/Static_Data_Hosting_using_GitHub_Pages/Data/Video/${element}" target="_blank">Get Link</a></button>
         </div>
     </div>
     `;
